@@ -1,0 +1,598 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,500;0,600;0,900;1,600;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;;
+}
+
+
+header{
+    height: 160px;
+}
+
+.info-contacts{
+    height: 40px;
+    background-color: #000;
+    margin: auto;
+    color: #fff;
+}
+
+.info-contacts-area{
+    height: inherit;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.info-contacts-area .left,
+.info-contacts-area .right{
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+
+.info-contacts-area .right .icon{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-contacts-area .right .icon a{
+    text-decoration: none;
+}
+
+.info-contacts-area .right .icon i{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header{
+    width: inherit;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 110px;
+    height: 110px;
+}
+
+.logo img {
+    width: inherit;
+    height: inherit;
+}
+
+.menu nav ul,
+.menu nav li{
+    list-style: none;
+}
+
+.menu nav ul{
+    display: flex;
+}
+
+.menu nav ul li a{
+    display: block;
+    list-style: none;
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 5px;
+}
+
+.menu nav ul li a.active{
+    border-bottom: 3px solid orange;
+}
+
+
+
+/* sliders */
+
+
+.sliders{
+    width: 300vw;
+    display: flex;
+    position: relative;
+}
+
+
+.controls{
+    top: 0;
+    left: 66rem;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+
+.control{
+    width: 40px;
+    height: 11px;
+    background-color: #fff;
+    margin-left: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.control.active{
+    background-color: orange;
+}
+
+
+.slider{
+    width: 100vw;
+    height: 430px;
+    background-image: linear-gradient(to left, rgba(20, 131, 223, 0.5), rgba(245, 221, 3, 0.5)), url('../images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:flex-end;
+}
+
+
+
+
+.slider .area-quadrado{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+
+.slider .area-quadrado .quad{
+    position: absolute;
+    width: 490px;
+    height: 250px;
+    /* border-top: 4px solid yellow;
+    border-right: 4px solid yellow;
+    border-left: 4px solid yellow; */
+    border: 4px solid #f5de14;
+    transform: rotate(-10deg);
+    margin-bottom: 40px;
+}
+
+
+.slider .area-quadrado .quad.dois{
+    width: 480px;
+    border-top: 4px solid #08a5ee;
+    border-right: 4px solid #08a5ee;
+    border-left: 4px solid #08a5ee;
+    border-bottom: 4px solid transparent;
+    height: 300px;
+    transform: rotate(-20deg);
+    margin-bottom: -20px;
+    /* border-bottom: transparent; */
+    border-left: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.slider .area-quadrado .quad.dois h1{
+    font-size: 45px;
+    transform: rotate(20deg);
+}
+
+
+
+/* cursos em destaque */
+
+
+.cursos-destaques{
+    
+    width: inherit;
+    max-width: 1140px;
+    margin: 30px auto 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cursos-destaques h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+/*Email*/
+
+
+.email{
+    margin-top: 20px;
+    background-image: linear-gradient(to right, rgba(13, 49, 207, 0.9), rgba(20, 179, 241, 0.8));
+    padding: 40px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.email span{
+    font-size: 14px;
+}
+
+.email .email-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 650px;
+}
+
+
+.email .email-area .grandao{
+    font-size: 56px;
+}
+
+
+.email .email-area span{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.email .email-area p{
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.email .area-input{
+    width: 600px;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 7px;
+    margin: 20px 0;
+}
+
+.email .area-input input{
+    flex: 1;
+    height: inherit;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    font-style: italic;
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+.email .area-input .icon-input{
+    height: inherit;
+    border-left: 2px solid #ccc;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.email .area-input .icon-input i{
+    font-size: 20px;
+    color: #0d09df;
+}
+
+
+
+
+
+
+
+
+
+
+.blog{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    margin: 20px auto;
+}
+
+.blog .left,
+.blog .right{
+    flex: 1;
+}
+
+.blog .left,
+.blog .right{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.blog .left h1{
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.blog .left .noticia {
+    width: 100%;
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../images/noticia1.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    height: 470px;
+    justify-content: flex-end;
+    padding: 30px 20px;
+    cursor: pointer;
+}
+
+.blog .left .noticia .titulo-noticia{
+    width: 100%;
+    font-weight: 600;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.blog .left .noticia .desc-noticia{
+    width: 100%;
+    font-size: 15px;
+}
+
+
+.blog .right{
+    display:flex;
+    flex-direction: column;
+
+}
+
+
+.blog .right .menus{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+
+.blog .right .menus ul li{
+    list-style: none;
+    color: #c1c1c1;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.blog .right .menus ul li.active{
+    background-color: #08a5ee;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.blog .right .menus ul{
+    display: flex;
+}
+
+
+
+.blog .right .noticias{
+    flex: 1;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog .right .noticias .noticia{
+    flex: 1;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.blog .right .noticias .noticia .img-noticia{
+    width: 190px;
+    height: 150px;
+    background-color:yellow ;
+    border-radius: 10px;
+}
+
+.blog .right .noticias .noticia .img-noticia img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.blog .right .noticias .noticia .info-noticias{
+    flex: 1;
+    height: inherit;
+    padding-left: 20px;
+    color: #333;
+}
+
+.blog .right .noticias .noticia .info-noticias h3{
+    text-transform: uppercase;
+}
+
+.blog .right .noticias .noticia .info-noticias h3,
+.blog .right .noticias .noticia .info-noticias p{
+    margin-bottom: 6px;
+}
+
+.blog .right .noticias .noticia .info-noticias p{
+    font-size: 14px;
+}
+.blog .right .noticias .noticia .info-noticias a{
+    text-decoration: none;
+    color: #08a5ee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    padding: 10px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-area{
+    width: 1140px;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.footer-area .empresa{
+    color: #f5de14;
+}
+
+.footer-area .right{
+    display: flex;
+}
+
+.footer-area .right .icon{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-area .right .icon a{
+    text-decoration: none;
+}
+
+.footer-area .right .icon i{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+/* CARD*/
+
+.models{
+    display: none;
+}
+.card-area{
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    
+}
+
+.card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* border-top-right-radius: 7px;
+    border-top-left-radius: 7px; */
+    border-radius: 7px;
+    padding: 0 0 10px 0;
+}
+
+.card-area .tipo-curso{
+    width: 100px;
+    background-color: #08a5ee;
+    color: #fff;
+    text-align: center;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    margin-left: 10px;
+}
+.card-area .card img{
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.card-area .card .card-body{
+    width: inherit;
+    padding: 0 20px;
+}
+
+.card-area .card .card-body .titulo{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 19px;
+    margin-left: 0;
+}
+
+.card-area .card .card-body .instrutor,
+.card-area .card .card-body .qtd_alunos{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.card-area .card .card-body .instrutor span,
+.card-area .card .card-body .qtd_alunos span{
+    color: #08a5ee;
+    font-weight: 600;
+}
+
+.card-area .card .card-body  .ranking{
+    display: flex;
+    justify-content: space-between;
+    align-items: centers;
+    margin-top: 10px;
+}
+
+.card-area .card .card-body  .ranking .ranking-star i{
+    color: #f5de14;
+}
+
+.coracao{
+    color: tomato;
+    font-weight: bold;
+    font-size: 16px;
+}
