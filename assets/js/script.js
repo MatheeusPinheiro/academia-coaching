@@ -4,8 +4,6 @@
 
 let menu = document.querySelectorAll(".menu a")
 
-
-
 menu.forEach(item =>{
     item.addEventListener('click', ()=>{
         menu.forEach(otherItem =>{
@@ -15,6 +13,21 @@ menu.forEach(item =>{
         item.classList.add('active')
     })
 })
+
+/*menu blog*/
+
+let menus = document.querySelectorAll(".blog .right .menus ul li")
+
+menus.forEach(item =>{
+    item.addEventListener('click', ()=>{
+        menus.forEach(otherItem =>{
+            otherItem.classList.remove('active')
+        })
+
+        item.classList.add('active')
+    })
+})
+
 
 
 cursos.map((item,index)=>{
