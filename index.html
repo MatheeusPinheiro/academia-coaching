@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Academia do Coaching</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/carrosel.css" />
   </head>
   <body>
     <header>
@@ -51,28 +52,46 @@
     </header>
 
     <main>
-      <section class="sliders">
-        <div class="controls">
-          <div class="control active"></div>
-          <div class="control"></div>
-          <div class="control"></div>
-        </div>
+      
+      <section class="slider">
+        <div class="slider-content">
 
-        <div class="slider">
-          <div class="area-quadrado">
-            <div class="quad"></div>
-            <div class="quad dois">
-              <h1>
-                Você merece <br />
-                Estar no topo
-              </h1>
-            </div>
+          <input type="radio" name="btn-radio" id="radio1">
+          <input type="radio" name="btn-radio" id="radio2">
+          <input type="radio" name="btn-radio" id="radio3">
+
+          <div class="slider-box primeiro">
+            <img class="img-desktop" src="assets/images/banner.jpg" alt="slider"/>
+            <img class="img-mobile" src="assets/images/banner.jpg" alt="slider"/>
+          </div>
+
+          <div class="slider-box">
+            <img class="img-desktop" src="assets/images/festa.jpg" alt="slider"/>
+            <img class="img-mobile" src="assets/images/festa.jpg" alt="slider"/>
+          </div>
+
+          <div class="slider-box">
+            <img class="img-desktop" src="assets/images/futebol.jpg" alt="slider"/>
+            <img class="img-mobile" src="assets/images/futebol.jpg" alt="slider"/>
+          </div>
+
+          <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
+
+          <div class="nav-manual">
+            <label class="manual-btn" for="radio1"></label>
+            <label class="manual-btn" for="radio2"></label>
+            <label class="manual-btn" for="radio3"></label>
           </div>
         </div>
-        <div class="slider">.....</div>
-        <div class="slider">.....</div>
       </section>
 
+
+
+      
       <section class="cursos-destaques">
         <h2>Cursos em destaque</h2>
 
@@ -190,7 +209,7 @@
         <div class="footer-area">
             <div class="left">
                 <span>
-                    &copy;2017.Diretos Reservados á <span class="empresa">Academia do Coaching &reg;</span>
+                    &copy;2023.Diretos Reservados á <span class="empresa">Academia do Coaching &reg;</span>
                 </span>
               </div>
     
